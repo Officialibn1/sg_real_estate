@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+	font-family: 'Raleway', sans-serif;
+	/* font-family: 'Montserrat', sans-serif; */
+	scroll-behavior: smooth;
+}
+
+body {
+	font-optical-sizing: auto;
+	font-weight: '200';
+	font-style: normal;
+	font-variation-settings: 'wdth' 100;
+	@apply flex flex-col relative max-w-screen-2xl mx-auto;
+}
+
+.section_container {
+	@apply px-4 py-8 md:px-5 md:py-10 flex w-full;
+}
