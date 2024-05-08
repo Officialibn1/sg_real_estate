@@ -1,6 +1,3 @@
-<script>
-</script>
-
 <div class="section_container">
 	<div class="relative w-full overflow-hidden rounded-3xl">
 		<div class="lg:hidden flex flex-col gap-5 bg-[#ecf1f8]">
