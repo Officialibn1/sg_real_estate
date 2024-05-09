@@ -10,7 +10,7 @@
 		</h1>
 
 		<div
-			class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-center w-full lg:max-w-[1200px] lg:mx-auto lg:p-4"
+			class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-12 lg:gap-8 sm:px-12 lg:px-0 justify-center w-full lg:max-w-[1200px] lg:mx-auto lg:p-4"
 		>
 			{#each states as { id, ...rest } (id)}
 				<AvailableStateCard {rest} />
