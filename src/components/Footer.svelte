@@ -33,7 +33,7 @@
 				</div>
 
 				<span class="text-sm font-medium opacity-50 text-[#110229]"
-					>© 2021 . All rights reserved.</span
+					>© 2024 . All rights reserved.</span
 				>
 			</div>
 
@@ -116,7 +116,7 @@
 					Subscribe to get latest property, blog news from us
 				</p>
 
-				<div class="flex relative rounded-xl outline outline-[#8F90A6] items-center">
+				<div class="flex relative rounded-xl input_border overflow-hidden items-center">
 					<input
 						class="outline-none p-4 w-full active:outline-none focus:outline-none"
 						type="text"
@@ -135,3 +135,9 @@
 		</div>
 	</div>
 </footer>
+
+<style>
+	.input_border {
+		border: 1.5px solid #8f90a6;
+	}
+</style>
