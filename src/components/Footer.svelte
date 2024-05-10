@@ -9,9 +9,10 @@
 				</div>
 
 				<p class="text-sm font-light leading-relaxed">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-					ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-					ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					S&G Estate is passionate about creating exceptional living spaces in Nigeria. Founded in
+					2021, we've established ourselves as a leading real estate developer, transforming Jabi,
+					Wuse, and other sought-after neighborhoods with over 50 completed projects and boasting
+					over 100 houses and estates currently in our portfolio.
 				</p>
 
 				<div class="flex gap-6 item-center">
@@ -45,14 +46,7 @@
 						<span
 							class="hidden lg:flex lg:group-hover:w-full w-0 h-[2px] bg-gradient-to-r from-[#110229] to-[#8F90A6] ease-in-out duration-200 absolute -bottom-[2px] left-0"
 						></span>
-						<a href="/">Features</a>
-					</li>
-
-					<li class="relative group w-fit">
-						<span
-							class="hidden lg:flex lg:group-hover:w-full w-0 h-[2px] bg-gradient-to-r from-[#110229] to-[#8F90A6] ease-in-out duration-200 absolute -bottom-[2px] left-0"
-						></span>
-						<a href="/">Projects</a>
+						<a href="/properties">Projects</a>
 					</li>
 					<li class="relative group w-fit">
 						<span
@@ -65,7 +59,7 @@
 						<span
 							class="hidden lg:flex lg:group-hover:w-full w-0 h-[2px] bg-gradient-to-r from-[#110229] to-[#8F90A6] ease-in-out duration-200 absolute -bottom-[2px] left-0"
 						></span>
-						<a href="/">Support</a>
+						<a href="/contactus">Support</a>
 					</li>
 				</ul>
 
@@ -76,21 +70,7 @@
 						<span
 							class="hidden lg:flex lg:group-hover:w-full w-0 h-[2px] bg-gradient-to-r from-[#110229] to-[#8F90A6] ease-in-out duration-200 absolute -bottom-[2px] left-0"
 						></span>
-						<a href="/">about us</a>
-					</li>
-
-					<li class="relative group w-fit">
-						<span
-							class="hidden lg:flex lg:group-hover:w-full w-0 h-[2px] bg-gradient-to-r from-[#110229] to-[#8F90A6] ease-in-out duration-200 absolute -bottom-[2px] left-0"
-						></span>
-						<a href="/">agents</a>
-					</li>
-
-					<li class="relative group w-fit">
-						<span
-							class="hidden lg:flex lg:group-hover:w-full w-0 h-[2px] bg-gradient-to-r from-[#110229] to-[#8F90A6] ease-in-out duration-200 absolute -bottom-[2px] left-0"
-						></span>
-						<a href="/">blog</a>
+						<a href="/about">about us</a>
 					</li>
 
 					<li class="relative group w-fit">
@@ -104,7 +84,7 @@
 						<span
 							class="hidden lg:flex lg:group-hover:w-full w-0 h-[2px] bg-gradient-to-r from-[#110229] to-[#8F90A6] ease-in-out duration-200 absolute -bottom-[2px] left-0"
 						></span>
-						<a href="/">contact us </a>
+						<a href="/contactus">contact us </a>
 					</li>
 				</ul>
 			</div>

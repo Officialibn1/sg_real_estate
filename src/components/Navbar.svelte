@@ -27,25 +27,21 @@
 					<span
 						class="group-hover:w-full w-0 h-[2px] bg-gradient-to-r from-[#110229] to-[#8F90A6] ease-in-out duration-200 absolute -bottom-[2px] left-0"
 					></span>
-					<a href="/">Properties</a>
+					<a href="/properties">Properties</a>
 				</li>
-				<li class="relative group">
-					<span
-						class="group-hover:w-full w-0 h-[2px] bg-gradient-to-r from-[#110229] to-[#8F90A6] ease-in-out duration-200 absolute -bottom-[2px] left-0"
-					></span>
-					<a href="/">Agents</a>
-				</li>
+
 				<li class="relative group">
 					<span
 						class="group-hover:w-full w-0 h-[2px] bg-gradient-to-r from-[#110229] to-[#8F90A6] ease-in-out duration-200 absolute -bottom-[2px] left-0"
 					></span>
 					<a href="/about">About Us</a>
 				</li>
+
 				<li class="relative group">
 					<span
 						class="group-hover:w-full w-0 h-[2px] bg-gradient-to-r from-[#110229] to-[#8F90A6] ease-in-out duration-200 absolute -bottom-[2px] left-0"
 					></span>
-					<a href="/">Blogs</a>
+					<a href="/contactus">Contact Us</a>
 				</li>
 			</ul>
 
@@ -68,16 +64,15 @@
 							<a href="/" on:click={() => toggleNav()}>Home</a>
 						</li>
 						<li class="">
-							<a href="/" on:click={() => toggleNav()}>Properties</a>
+							<a href="/properties" on:click={() => toggleNav()}>Properties</a>
 						</li>
-						<li class="">
-							<a href="/" on:click={() => toggleNav()}>Agents</a>
-						</li>
+
 						<li class="">
 							<a href="/about" on:click={() => toggleNav()}>About Us</a>
 						</li>
+
 						<li class="">
-							<a href="/" on:click={() => toggleNav()}>Blogs</a>
+							<a href="/contactus" on:click={() => toggleNav()}>Contact Us</a>
 						</li>
 					</ul>
 				</div>
