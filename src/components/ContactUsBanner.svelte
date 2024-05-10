@@ -14,7 +14,7 @@
 				of real estate.
 			</p>
 
-			<a href="/" class="w-fit">
+			<a href="/contactus" class="w-fit">
 				<span
 					class="px-8 lg:px-10 py-3 rounded-lg text-white text-sm font-semibold bg-[#1DAEFF] border_width contact_span lg:hover:bg-transparent lg:hover:text-[#110229] duration-300 ease-in-out"
 				>
