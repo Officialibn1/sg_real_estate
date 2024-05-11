@@ -17,7 +17,7 @@
 
 	let toastType = 'success';
 
-	let toastTimeout = 3000;
+	let toastTimeout = 6000;
 
 	let submitEmailButtonDisabled = true;
 
