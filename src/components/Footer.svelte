@@ -1,3 +1,49 @@
+<script>
+	import Toasts from './ui/Toasts.svelte';
+
+	import { addToast } from '../store/toast';
+
+	let email = '';
+
+	let emailError;
+
+	let dismisableToast = true;
+
+	let toastType = 'success';
+
+	let toastTimeout = 3000;
+
+	let submitEmailButtonDisabled = true;
+
+	let emailFormat =
+		/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+
+	const handleSubscribeInputChange = () => {
+		let emailLength = email.trim().length;
+
+		console.log(emailFormat.test(email));
+
+		if (!emailFormat.test(email)) {
+			emailError = `Your email ${email} is not a valid email!`;
+			submitEmailButtonDisabled = true;
+		} else {
+			emailError = null;
+			submitEmailButtonDisabled = false;
+		}
+	};
+
+	const handleSubscribeSubmit = () => {
+		if (emailFormat.test(email)) {
+			addToast({ email, dismisableToast, toastTimeout, toastType });
+
+			emailError = null;
+			submitEmailButtonDisabled = true;
+
+			email = '';
+		}
+	};
+</script>
+
 <footer>
 	<div class="section_container">
 		<div class="flex flex-col sm:flex-row flex-wrap gap-8 lg:justify-between lg:items-start w-full">
@@ -93,24 +139,38 @@
 				<h1 class=" font-bold text-lg capitalize">subscribe</h1>
 
 				<p class="text-sm font-light leading-relaxed">
-					Subscribe to get latest property, blog news from us
+					Subscribe to get latest property, blog news from us.
 				</p>
 
-				<div class="flex relative rounded-xl input_border overflow-hidden items-center">
+				<form
+					on:submit|preventDefault
+					class="flex relative rounded-xl input_border overflow-hidden items-center"
+				>
 					<input
+						on:input={handleSubscribeInputChange}
+						bind:value={email}
 						class="outline-none p-4 w-full active:outline-none focus:outline-none"
-						type="text"
+						type="email"
 						placeholder="Email Address"
 					/>
 
-					<div class="absolute h-full flex items-center right-2">
-						<span
-							class="bg-[#1DAEFF] rounded-full p-2 w-10 h-10 aspect-square flex items-center justify-center"
-						>
+					<button
+						type="submit"
+						on:click={() => handleSubscribeSubmit()}
+						disabled={submitEmailButtonDisabled}
+						class="absolute flex items-center rounded-full p-2 w-10 h-10 aspect-square right-2 bg-[#1DAEFF] disabled:bg-slate-300 disabled:cursor-not-allowed"
+					>
+						<span class="flex items-center justify-center h-full w-full">
 							<i class="fa fa-chevron-right text-xl text-white" aria-hidden="true"></i>
 						</span>
-					</div>
-				</div>
+					</button>
+				</form>
+
+				{#if emailError}
+					<p class="text-sm font-light text-red-300">
+						{emailError}
+					</p>
+				{/if}
 			</div>
 		</div>
 	</div>
