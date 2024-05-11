@@ -44,7 +44,7 @@
 		}
 	};
 
-	const handleSubscribeSubmit = () => {
+	const handleSubscribeSubmit = async () => {
 		if (
 			!emailFormat.test(email) ||
 			name.length < 10 ||
@@ -57,10 +57,13 @@
 
 			return;
 		} else {
+			submitEmailButtonDisabled = true;
+
+			await new Promise((resolve) => setTimeout(resolve, 1500));
+
 			addToast({ message, dismisableToast, toastTimeout, toastType });
 
 			emailError = null;
-			submitEmailButtonDisabled = true;
 
 			email = '';
 
