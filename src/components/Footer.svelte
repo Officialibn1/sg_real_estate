@@ -1,9 +1,9 @@
 <script>
-	import Toasts from './ui/Toasts.svelte';
-
 	import { addToast } from '../store/toast';
 
 	let email = '';
+
+	$: message = `Successfully subscribed to our newsletter using ${email}`;
 
 	let emailError;
 
@@ -19,10 +19,6 @@
 		/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
 
 	const handleSubscribeInputChange = () => {
-		let emailLength = email.trim().length;
-
-		console.log(emailFormat.test(email));
-
 		if (!emailFormat.test(email)) {
 			emailError = `Your email ${email} is not a valid email!`;
 			submitEmailButtonDisabled = true;
@@ -34,7 +30,7 @@
 
 	const handleSubscribeSubmit = () => {
 		if (emailFormat.test(email)) {
-			addToast({ email, dismisableToast, toastTimeout, toastType });
+			addToast({ message, dismisableToast, toastTimeout, toastType });
 
 			emailError = null;
 			submitEmailButtonDisabled = true;
@@ -151,6 +147,7 @@
 						bind:value={email}
 						class="outline-none p-4 w-full active:outline-none focus:outline-none"
 						type="email"
+						name="email"
 						placeholder="Email Address"
 					/>
 

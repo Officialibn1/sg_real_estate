@@ -10,8 +10,7 @@
 			<Toast
 				toastType={toast.toastType}
 				dismisableToast={toast.dismisableToast}
-				on:dismiss={() => dismissToast(toast.id)}
-				>Successfully subscribed to our <br /> newsletter using {toast.email}</Toast
+				on:dismiss={() => dismissToast(toast.id)}>{toast.message}</Toast
 			>
 		{/each}
 	</section>
