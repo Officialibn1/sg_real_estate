@@ -5,7 +5,10 @@
 	import RecentlyAdded from '../components/RecentlyAdded.svelte';
 </script>
 
-<Hero />
+<Hero
+	title="Easy way to find a perfect property"
+	description="We provide a complete service for the sale, purchase or rental of real estate."
+/>
 
 <AvailableStates />
 

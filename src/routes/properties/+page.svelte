@@ -1,6 +1,6 @@
 <script>
-	import AvailableStates from '../../components/AvailableStates.svelte';
 	import ContactUsBanner from '../../components/ContactUsBanner.svelte';
+	import Hero from '../../components/Hero.svelte';
 	import RecentlyAdded from '../../components/RecentlyAdded.svelte';
 </script>
 
@@ -26,7 +26,13 @@
 	</div>
 </div>
 
-<AvailableStates />
+<Hero
+	title="Simply search for a
+property."
+	description="You can search for an available property via,
+location, size or rent price."
+	showSearch={true}
+/>
 
 <RecentlyAdded />
 
