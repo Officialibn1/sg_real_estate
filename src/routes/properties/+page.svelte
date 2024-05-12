@@ -106,7 +106,7 @@ location, size or rent price."
 
 <style>
 	.sort_component {
-		@apply px-3 py-2 rounded-lg focus:outline-blue-300 appearance-none bg-transparent;
+		@apply px-3 py-2 rounded-lg focus:outline-blue-300 appearance-none bg-transparent w-[150px];
 		border: 1px solid #dcdceb;
 	}
 </style>
