@@ -1,5 +1,7 @@
 <script>
 	export let property;
+
+	import formatCurrency from '../lib/currencyformatter';
 </script>
 
 <div
@@ -28,15 +30,19 @@
 			</p>
 		</div>
 
-		<div class="flex items-center justify-between">
-			<agent class="text-xs lg:text-base font-light text-[#8F90A6]">
+		<div class="flex flex-col gap-2">
+			<span class="text-xs lg:text-base font-light text-[#8F90A6]">
 				{`By: ${property.agent}`}
-			</agent>
+			</span>
 
-			<div class="p-1 bg-[#8F90A6] rounded-lg">
-				<p class="text-white text-sm lg:text-lg">
-					{`₦${property.price}`}
-				</p>
+			<div class="flex items-center">
+				<p class="text-sm lg:text-base font-light text-[#8F90A6]">Price:</p>
+
+				<div class="p-1 bg-[#8F90A6] rounded-lg w-fit ml-auto">
+					<p class="text-white text-sm lg:text-lg">
+						{`${formatCurrency(property.price)}`}
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
