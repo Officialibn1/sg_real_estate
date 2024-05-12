@@ -109,7 +109,7 @@
 			{/if}
 		</div>
 
-		<div class="w-full relative hidden lg:flex">
+		<div class="w-full relative hidden lg:flex lg:min-h-[470px] xl:min-h-[670px]">
 			<div class="absolute top-0 left-0 w-1/2 flex flex-col gap-3 pl-16 py-12">
 				<h1
 					class="text-4xl xl:text-6xl font-medium leading-relaxed hero_text_font xl:leading-[1.35] xl:mb-8 xl:pt-20 xl:pl-12"
